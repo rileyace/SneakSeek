@@ -88,6 +88,7 @@ const ResultsPage = () => {
                   notes
                 });
                 console.log("Saved to context:", notes);
+                setNotes("");
                 setModalVisible(false);
               }}
             >

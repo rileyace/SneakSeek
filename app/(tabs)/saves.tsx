@@ -10,7 +10,7 @@ export default function Saves() {
     <SafeAreaView style={styles.container}>
       <Text style={styles.header}>Saved Scans</Text>
       <FlatList
-        data={saves}
+        data={[...saves].reverse()}
         keyExtractor={(item) => item.id}
         contentContainerStyle={{ padding: 16 }}
         renderItem={({ item }) => (
