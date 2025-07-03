@@ -34,6 +34,14 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="saves"
+        options={{
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'save-sharp' : 'save-outline'} color={color} size={24}/>
+          ),
+        }}
+      />
     </Tabs>
   );
 }
